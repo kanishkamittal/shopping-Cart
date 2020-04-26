@@ -24,7 +24,7 @@ app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
 app.set('view engine', '.hbs');
 
 app.use(bodyParser.json())
-//app.use(bodyParser.urlencoded({extented:true}))
+app.use(bodyParser.urlencoded({extented:true}))
 app.use(expressValidator())
 app.use(cookieParser())
 app.use(session({secret:'mylongsecret!!!12345',
